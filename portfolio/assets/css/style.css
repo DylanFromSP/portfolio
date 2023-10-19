@@ -207,6 +207,7 @@ nav{
 }
 .featured-text-btn>.blue-btn:hover{
     background: #240046;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .social_icons{
     display: flex;
