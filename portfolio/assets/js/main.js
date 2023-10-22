@@ -1,13 +1,38 @@
 /* ----- NAVIGATION BAR FUNCTION ----- */
-function myMenuFunction(){
-    var menuBtn = document.getElementById("myNavMenu");
+// function myMenuFunction(){
+//     var menuBtn = document.getElementById("myNavMenu");
 
-    if(menuBtn.className === "nav-menu"){
+//     if(menuBtn.className === "nav-menu"){
+//       menuBtn.className += " responsive";
+//     } else {
+//       menuBtn.className = "nav-menu";
+//     }
+//   }
+
+function toggleMenu() {
+  var menuBtn = document.getElementById("myNavMenu");
+
+  if (menuBtn.className === "nav-menu") {
       menuBtn.className += " responsive";
-    } else {
+  } else {
       menuBtn.className = "nav-menu";
-    }
   }
+}
+
+function closeMenu() {
+  var menuBtn = document.getElementById("myNavMenu");
+  menuBtn.className = "nav-menu";
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  var links = document.querySelectorAll(".nav-menu a");
+
+  links.forEach(function (link) {
+      link.addEventListener("click", function () {
+          closeMenu();
+      });
+  });
+});
 
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
   window.onscroll = function() {headerShadow()};
@@ -33,7 +58,7 @@ function myMenuFunction(){
 
 /* ----- TYPING EFFECT ----- */
  var typingEffect = new Typed(".typedText",{
-    strings : ["Designer","Marketer","Developer"],
+    strings : ["Dylan","Davindra"],
     loop : true,
     typeSpeed : 100, 
     backSpeed : 80,
