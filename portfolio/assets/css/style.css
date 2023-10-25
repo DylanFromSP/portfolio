@@ -186,6 +186,7 @@ nav{
     font-weight: 600;
     color: var(--text-color-second);
     margin-block: 20px;
+    overflow: hidden;
 }
 .typedText{
     text-transform: capitalize;
@@ -195,6 +196,7 @@ nav{
     font-size: 15px;
     margin-bottom: 30px;
     color: var(--text-color-second);
+    overflow: hidden;
 }
 .featured-text-btn{
     display: flex;
