@@ -393,25 +393,33 @@ h3{
 }
 
 /* ----- PROJECTS BOX ----- */
-.project-container{
+.project-container {
     display: flex;
     width: 100%;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+    justify-content: center; /* Center the container */
+    overflow-x: auto; /* Enable horizontal scrolling */
 }
-.project-box{
+
+.projects-scroll {
+    display: flex;
+    gap: 20px;
+    /* Set a width for the combined width of all project boxes to fit within the container */
+    width: 100%; /* Adjust the width as needed */
+}
+
+.project-box {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 30%;
+    width: 30%; /* Adjust the width as needed to fit within the container */
     height: 250px;
     background: var(--color-white);
     border-radius: 20px;
     /* box-shadow: 1px 8px 10px 2px var(--first-shadow-color); */
     overflow: hidden;
+    min-width: 300px; /* Set a minimum width to ensure they don't become too narrow */
 }
 .project-box>i{
     font-size: 50px;
@@ -582,7 +590,6 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
         width: 100%;
         min-height: 450px;
         height: 90vh;
