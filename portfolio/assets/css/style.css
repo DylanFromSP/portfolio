@@ -247,22 +247,6 @@ nav{
     }
 }
 
-/* ----- MAIN BOX ----- */
-.section{
-    padding-block: 3em;
-}
-.row{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    gap: 50px;
-}
-.col{
-    display: flex;
-    width: 100%;
-    margin-bottom: 150px;
-}
-
 /* -- ## --- RESUABLE CSS -- ## -- */
 .top-header{
     text-align: center;
@@ -347,6 +331,7 @@ h3{
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 .about-box {
@@ -359,7 +344,6 @@ h3{
     height: 400px;
     background: #ededed;
     border-radius: 20px;
-    /* box-shadow: 1px 8px 10px 2px var(--first-shadow-color); */
     overflow: hidden;
 }
 
@@ -390,6 +374,88 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* ----- EXPERIENCE BOX ----- */
+.section {
+    padding-block: 3em;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.col {
+    display: flex;
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+.image-container {
+    width: 100%; /* Image takes up half the width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+@keyframes imgSlideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.project-image {
+    max-width: 100%; 
+    height: auto;
+    animation: imgSlideIn 5s ease-in-out infinite;
+}
+
+@keyframes imgPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.project-image-2{
+    max-width: 80%; 
+    height: auto;
+    border-radius: 10px;
+    animation: imgPulse 5s ease-in-out infinite;
+}
+
+.skills-header h3{
+    margin-top: 50px;
+}
+
+.text-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 20px; /* Adjust the top and bottom padding */
+    padding-inline: 20px;
+    width: 100%;
+    background: #ebebeb;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.text-container p{
+    text-align: center;
+    font-size: 15px;
+    color: #777;
 }
 
 /* ----- PROJECTS BOX ----- */
