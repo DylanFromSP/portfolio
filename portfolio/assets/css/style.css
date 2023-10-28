@@ -110,6 +110,7 @@ nav{
 }
 .nav-menu, .nav_menu_list{
     display: flex;
+    align-items: center;
 }
 .nav-menu .nav_list{
     list-style: none;
@@ -121,13 +122,14 @@ nav{
     font-weight: 500;
     padding-inline: 15px;
     margin-inline: 20px;
+    
 }
 .nav-menu-btn{
     display: none;
 }
 .nav-menu-btn i{
     font-size: 28px;
-    cursor: pointer;
+    cursor: pointer;    
 }
 .active-link{
     position: relative;
@@ -202,6 +204,10 @@ nav{
     display: flex;
     gap: 20px;
     text-decoration: none;
+}
+.featured-text-btn a{
+    display: flex;
+    align-items: center;
 }
 .nav-btn:hover{
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
