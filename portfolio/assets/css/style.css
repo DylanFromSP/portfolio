@@ -267,10 +267,10 @@ h3{
 }
 
 /* ----- ABOUT INFO ----- */
-.about-header{
+.skills-header{
     color: white !important;
 }
-.about-info{
+.skills-info{
     position: relative;
     display: flex;
     align-items: center;
@@ -282,12 +282,12 @@ h3{
     /* box-shadow: 1px 8px 10px 2px var(--first-shadow-color); */
     border-radius: 20px;
 }
-.about-info p{
+.skills-info p{
     text-align: center;
     font-size: 15px;
     color: #777;
 }
-.about-btn button{
+.skills-btn button{
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -295,7 +295,7 @@ h3{
     color: var(--color-white);
     border-radius: 30px;
 }
-.about-btn button:hover{
+.skills-btn button:hover{
     background: var(--first-color-hover);
 }
 
@@ -328,7 +328,7 @@ h3{
 }
 
 /* ----- ABOUT BOX ----- */
-.about-container {
+.skills-container {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -337,7 +337,7 @@ h3{
     margin-top: 30px;
 }
 
-.about-box {
+.skills-box {
     position: relative;
     display: flex;
     justify-content: center;
@@ -350,19 +350,19 @@ h3{
     overflow: hidden;
 }
 
-.about-box>i {
+.skills-box>i {
     font-size: 50px;
     color: white;
     margin-bottom: 25px;
 }
 
-.about-box h3 {
+.skills-box h3 {
     font-size: 20px;
     color: #240046;
     overflow: hidden;
 }
 
-.about-image {
+.skills-image {
     width: 50%;
 }
 
@@ -379,7 +379,7 @@ h3{
     align-items: center;
 }
 
-#about{
+#skills{
     background-image: linear-gradient(to bottom, #9e6de1, #ae63e8, #c155ec, #d640ed, #eb12eb);
     margin-inline: -10vw; 
     padding-inline: 10vw;
@@ -730,7 +730,7 @@ footer{
         font-size: 40px;
     }
 
-    .about-box {
+    .skills-box {
         width: 100%;
     }
 
