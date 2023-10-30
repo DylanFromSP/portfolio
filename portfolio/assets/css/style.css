@@ -88,7 +88,7 @@ nav{
     width: 100%;
     height: 90px;
     line-height: 90px;
-    background: #240046;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     padding-inline: 9vw;
     transition: .3s;
     z-index: 100;
@@ -386,7 +386,9 @@ h3{
 }
 
 #skills{
-    background-image: linear-gradient(to bottom, #9e6de1, #ae63e8, #c155ec, #d640ed, #eb12eb);
+    /* background-image: linear-gradient(to bottom, #9e6de1, #ae63e8, #c155ec, #d640ed, #eb12eb); */
+    /* background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); */
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
     margin-inline: -10vw; 
     padding-inline: 10vw;
 }
@@ -398,15 +400,60 @@ h3{
 
 .row {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    gap: 20px;
+    height: 300px;
+    align-items: center;
 }
 
 .col {
+    flex-basis: 50%;
+}
+
+.col p {
+    margin-bottom: 30px;
+}
+
+.col>.linkedin-btn{
     display: flex;
-    width: 100%;
-    margin-bottom: 150px;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    background: #0072b1;
+    color: var(--color-white);
+}
+.col>.linkedin-btn:hover{
+    background: #240046;
+}
+
+.card {
+    /* border-radius: 20px; */
+}
+
+.card img{
+    width: 500px;
+    height: auto;
+    /* animation: imgFloat 5s ease-in-out infinite; */
+}
+
+.card-1{
+    padding-left: 10px;
+}
+
+.card-2{
+    margin-left: 20px;
+}
+
+.row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Adjust the order of columns in the second row */
+.row.reverse .col:first-child {
+    order: 1;
+    padding-left: 20px;
+}
+
+.row.reverse .col:last-child {
+    order: 2;
 }
 
 .image-container {
@@ -475,7 +522,7 @@ h3{
 }
 
 /* ----- PROJECTS BOX ----- */
-.project-container{
+/* .project-container{
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -492,7 +539,6 @@ h3{
     height: 250px;
     background: var(--color-white);
     border-radius: 20px;
-    /* box-shadow: 1px 8px 10px 2px var(--first-shadow-color); */
     overflow: hidden;
 }
 .project-box>i{
@@ -523,7 +569,7 @@ h3{
 .project-box:hover.project-box>label{
     color: var(--color-white);
     z-index: 2;
-}
+} */
 
 /* ----- CONTACT BOX ----- */
 .contact-info{
@@ -651,7 +697,7 @@ footer{
 
     .nav-menu.responsive {
         left: 0;
-        background:#240046;
+        background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
     }
 
     .nav-menu {

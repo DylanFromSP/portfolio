@@ -81,9 +81,9 @@ sr.reveal('.featured-text-info',{delay: 200, origin: 'right'})
 // sr.reveal('.featured-image',{delay: 300})
 
 /* -- ABOUT BOX -- */
-sr.reveal('#skills-box-1',{interval: 200, origin: 'left'})
-sr.reveal('#skills-box-2',{interval: 200, origin: 'left'})
-sr.reveal('#skills-box-3',{interval: 200, origin: 'left'})
+// sr.reveal('#skills-box-1',{interval: 200, origin: 'left'})
+// sr.reveal('#skills-box-2',{interval: 200, origin: 'left'})
+// sr.reveal('#skills-box-3',{interval: 200, origin: 'left'})
 
 /* -- PROJECT BOX -- */
 // sr.reveal('.project-box',{interval: 200})
