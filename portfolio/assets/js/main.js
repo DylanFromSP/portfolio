@@ -77,8 +77,8 @@ document.addEventListener("DOMContentLoaded", function () {
 // sr.reveal('.featured-text-card',{})
 sr.reveal('.featured-name',{delay: 100, origin: 'left'})
 sr.reveal('.featured-text-info',{delay: 200, origin: 'right'})
-// sr.reveal('.featured-text-btn',{delay: 200, origin: 'bottom'})
-// sr.reveal('.featured-image',{delay: 300})
+sr.reveal('.experience-1',{delay: 100, origin: 'right'})
+sr.reveal('.experience-2',{delay: 200, origin: 'left'})
 
 /* -- ABOUT BOX -- */
 // sr.reveal('#skills-box-1',{interval: 200, origin: 'left'})
